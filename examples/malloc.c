@@ -3,20 +3,19 @@
 
 
 int main (){
-  int *array;
-  int num;
+  // Todo(1): Declarar un apuntador a entero llamado array
+  // Todo(2): Declarar un entero para almacenar el número de elementos
 
   printf("¿Cuantos elementos tiene el conjunto?\n");
-  scanf("%d", &num);
+  // Todo(3): leer el número de elementos
 
-  array = (int*) malloc(sizeof(int));
+  // Todo(4): reservar memoria usando malloc y asignarla a array
 
   if (array!=NULL) {
     printf("[ ");
-    for(int i=0; i < num; i++){
-	    printf("%d, ", *(array+1));
+    //  Todo(5): imprimir los elementos del array
     printf("]\n");
-    free(array);
+    // Todo(6): liberar la memoria reservada por malloc
   }
   return 0;
 }
